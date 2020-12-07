@@ -14,26 +14,29 @@ public class ProductRepository {
 
 	public ProductRepository() {
 		Product phone = new Product("P1234", "IpHONE 12", 100000);
-		phone.setDescription("6.1-inch, 2532X121 Super Retina XDR display, µà¾ó Ä«¸Þ¶ó");
+		phone.setDescription("6.1-inch, 2532X121 Super Retina XDR display, ï¿½ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½");
 		phone.setCategory("Smart Phone");
 		phone.setManufacturer("Apple");
 		phone.setDescription("1000");
 		phone.setCondition("New");
+		phone.setFilename("P1234.png");
 
 		Product notebook = new Product("P1235", "LG PC gram", 400000);
-		notebook.setDescription("6.1-inch, 2532X121 Super Retina XDR display, µà¾ó Ä«¸Þ¶ó");
+		notebook.setDescription("6.1-inch, 2532X121 Super Retina XDR display, ï¿½ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½");
 		notebook.setCategory("Smart Phone");
 		notebook.setManufacturer("Apple");
 		notebook.setDescription("1000");
-		notebook.setCondition("New");
-
+		notebook.setCondition("Old");
+		notebook.setFilename("P1235.png");
+		
 		Product tablet = new Product("P1236", "Galaxy Tab", 500000);
-		tablet.setDescription("6.1-inch, 2532X121 Super Retina XDR display, µà¾ó Ä«¸Þ¶ó");
+		tablet.setDescription("6.1-inch, 2532X121 Super Retina XDR display, ï¿½ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½");
 		tablet.setCategory("Smart Phone");
 		tablet.setManufacturer("Apple");
 		tablet.setDescription("1000");
 		tablet.setCondition("New");
-
+		tablet.setFilename("P1236.png");
+		
 		listOfProducts.add(phone);
 		listOfProducts.add(notebook);
 		listOfProducts.add(tablet);

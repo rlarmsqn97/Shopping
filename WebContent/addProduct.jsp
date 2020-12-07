@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="styLesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	href="./resources/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 <title>상품 등록</title>
@@ -16,7 +16,7 @@
 	</div>
 	<div class="container">
 		<form name="newProduct" action="./processAddProduct.jsp"
-			class="form-horizontal" method="post">
+			class="form-horizontal" method="post" enctype="multipart/form-data">
 			<div class="form-group row">
 				<label class="col-sm-2">상품 코드</label>
 				<div class="col-sm-3">
@@ -72,11 +72,14 @@
 				</div>
 			</div>
 			<div class="form-group row">
+			    <label class="col-sm-2">이미지</label>
+			    <div class="col-sm-5">
+			         <input type="file" name="productImage" class="form-control">
+			    </div>
+	        </div>
 				<div class="col-sm-offset-2 col-sm-10 ">
 					<input type="submit" class="btn btn-primary" value="등록">
 				</div>
-			</div>
-		</form>
-	</div>
+			</div>	
 </body>
 </html>
